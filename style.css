@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.title{
+  color: white;
+  position: relative;
+  right:70px;
+}
+.subtitle{
+  text-decoration: underline;
+  margin: 10px;
+}
+img{
+  height: 70px;
+  width: 90px;
+  position: relative;
+  right:60px
+}
+nav{
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 30px;
+}
+a{
+  color:white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  position: relative;
+  right:40px;
+  transition: 0.2s;
+}
+a::after{
+  content: "";
+  position: absolute;
+ width: 0%;
+ height: 2px;
+ left: 0px;
+ bottom: -5px;
+ background-color: #FAC610;
+ transition: 0.5s linear;
+}
+a:hover:after{
+  width: 100%;
+}
+a:hover{
+  color:#FAC610;
+}
+.aboutus{
+  background-color: #FAC610;
+  font-size: 25px;
+  text-align: justify;
+  padding: 25px 20px;
+  margin:10px;
+}
+span{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  font-family: "Noto Sans Tamil", sans-serif;
+  background-color: #FAC610;
+  text-align: justify;
+  font-size: 20px;
+}
+
+select{
+  padding:5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #FAC610;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: chocolate;
+}
+
+/* Popup form styles */
+.popup-form {
+  display: none; /* Hidden by default */
+  position: fixed;
+  background-color:beige;
+  opacity: 95%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+  animation: fadeIn 0.5s ease forwards;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0e689;
+  border: none;
+  color: black;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer base styling */
+footer {
+  background-color: #282a36;
+  color: #f8f8f2;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 50px 20px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #6272a4;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-column p{
+  margin: 5px 0;
+  list-style: none;
+  padding-right: 30px;
+}
+.footer-column ul {
+  margin: 5px 0;
+  list-style: none;
+  padding-left: 40px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright line */
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 8px;
+  color: #8b8b8b;
+  border-top: 1px solid #6272a4;
+}

@@ -1,0 +1,163 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav img {
+  height: 50px;
+  width: 90px;
+}
+
+nav .title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+/* Toggle Button */
+#toggle-button {
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+  position: absolute;
+  left: 15px;
+}
+
+/* Sidebar Close Button */
+#sidebar-close {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  text-align: right;
+  display: none;
+}
+
+.sidebar.active #sidebar-close {
+  display: block;
+}
+
+/* Container */
+.container {
+  display: flex;
+  margin-top: 60px;
+}
+
+/* header */
+header{
+  display: flex;
+  user-select: none;
+  color:white;
+  padding: 10px;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #333;
+  height: 100vh;
+  position: fixed;
+  left: -250px;
+  transition: 0.3s;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu li {
+  padding: 1rem;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu li:hover, .menu li.active {
+  background: rgb(250, 198, 20);
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Main Content */
+.content {
+  margin-left: 0;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+}
+
+/* Grid Layout */
+.grid, .grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item, .grid-item-1 {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid-item {      
+  background-color: #fac610;
+  font-size: 21px;
+  padding: 10px;
+  gap: 0px 20px;
+}
+
+.grid-item-1 {
+  background-color: blue;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  gap: 20px 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+  .grid, .grid-1 {
+    grid-template-columns: 1fr;
+  }
+}
